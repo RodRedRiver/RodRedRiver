@@ -1,11 +1,12 @@
 # Rodrigo Rio-Tinto
 
-**Software Engineer — Backend & Systems**
+**Software Engineer — Backend, Full-Stack & Product Engineering**
 
-I build the services behind connected hardware: APIs, data pipelines, and the
-infrastructure that turns raw sensor readings into something people can act on.
-My recent work spans a Node.js/PostgreSQL ingestion service, a React Native
-client, and the firmware-facing tooling for a combat-sports wearable.
+I build software across the whole stack of connected products: backend APIs and
+data pipelines, mobile apps, polished web front ends, interactive 3D, and the
+tooling that ties them to real hardware. My recent work spans a Node.js/PostgreSQL
+ingestion service, a React Native client, an encrypted pilot-activation system,
+and a WebGL product experience for a combat-sports wearable.
 
 ---
 
@@ -15,7 +16,9 @@ client, and the firmware-facing tooling for a combat-sports wearable.
 | --- | --- |
 | **Backend** | Node.js, Express, REST API design, request validation, CORS |
 | **Data** | PostgreSQL (schema design, relational modelling, time-series readings), Supabase |
-| **Client & Web** | React Native, Expo, JavaScript, HTML/CSS |
+| **Mobile** | React Native, Expo, React Navigation, Bluetooth Low Energy |
+| **Web & Front End** | JavaScript (ES modules), HTML/CSS, design systems, self-hosted typography, responsive layout |
+| **3D & Graphics** | Three.js / WebGL, procedural geometry, PBR materials, OBJ/MTL asset pipelines |
 | **Security** | AES-GCM and PBKDF2 (Web Crypto), TLS certificate tooling, token-based access |
 | **Hardware Integration** | Bluetooth Low Energy, IMU sensor data, firmware-to-cloud data flow |
 | **Tooling** | Git, Node.js CLIs, Python, shell scripting |
@@ -37,7 +40,13 @@ orientation) from the band.
   so the data file is safe to publish.
 - Wrote a dependency-free Node.js CLI to issue, list, and manage pilot codes.
 - Added a shared leaderboard backed by Supabase and keyed by pilot code.
-- Maintained print-ready collateral as reproducible source rather than one-off files.
+- Built an interactive Three.js experience for the product: a scroll-driven PCB
+  model with procedural yarn geometry and physically based materials, plus a
+  custom asset-packing script.
+- Designed the site and pilot pages around a single design system with
+  self-hosted fonts and no framework dependencies.
+- Maintained print-ready collateral as reproducible source (HTML to PDF via
+  headless Chrome) rather than one-off files.
 
 ### Camelot — Environmental Monitoring Backend
 *Private repository*
@@ -60,10 +69,11 @@ with certificate chains, SANs, and trust configuration.
 
 ---
 
-## What I Bring to a Backend Team
+## What I Bring to a Team
 
 - **End-to-end ownership.** I have taken features from the database schema through the API to the client that consumes it.
 - **Practical security habits.** Encrypted-at-rest records, short-lived codes, and least-privilege thinking are part of how I design things.
+- **Range.** I move comfortably between database design, mobile UI, front-end craft, and 3D graphics, and I pick up new areas quickly.
 - **Comfort near hardware.** I understand sampling rates, noisy sensor data, and the constraints devices put on the services that talk to them.
 - **Maintainable by default.** Small dependency footprints, documented tooling, and sources that can be rebuilt by the next person.
 
