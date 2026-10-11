@@ -64,8 +64,18 @@ a phone or another machine, with native clients on iOS, macOS, and Android.
 - Native clients with tabbed sessions, coding-agent detection, push
   notifications, and two-way clipboard bridging.
 
+### IMU Drift Compensation & Punch Analytics
+[`RodRedRiver/imu-punch-analytics`](https://github.com/RodRedRiver/imu-punch-analytics)
+
+Sensor-fusion and motion-analytics code from the Impkt wearable (nRF52, IMU sampled at roughly 833 Hz).
+
+- Mahony complementary filter with an accelerometer trust gate that is switched off during a punch, so impacts cannot bend the orientation estimate.
+- Stillness detection based on gyro jitter rather than distance from the bias estimate, which avoids a calibration deadlock found on real hardware.
+- Zero-velocity updates for gyro bias, gravity baseline, and yaw hold.
+- Python tooling that segments punches and computes peak acceleration, peak speed, reach, path length, straightness, and residual drift.
+
 ### Camelot — Environmental Monitoring Backend
-*Private repository*
+[`RodRedRiver/camelot-server`](https://github.com/RodRedRiver/camelot-server)
 
 An air-quality telemetry system: a BLE-connected mobile client and a REST
 backend that ingests and serves sensor data.
@@ -77,6 +87,12 @@ backend that ingests and serves sensor data.
   listing, and advice retrieval, with IP-based geolocation for each device.
 - Built the companion React Native (Expo) app with dashboard, per-metric detail,
   and environment views over Bluetooth Low Energy.
+
+### Open Source
+
+- **[fusion360-mcp-server](https://github.com/faust-machines/fusion360-mcp-server)**: diagnosed and fixed `measure_distance` failing on every call (it read attributes that do not exist on Fusion's `MeasureResults`). [Pull request #29](https://github.com/faust-machines/fusion360-mcp-server/pull/29), under review.
+- **[CodeRelay](https://github.com/miguelriotinto/CodeRelay)**: co-developed (see above).
+- **[impkt-ios](https://github.com/RodRedRiver/impkt-ios)**: iOS app for the Impkt wearable.
 
 ### Secure Local Proxy Tooling
 Worked with a private certificate authority and a TLS-intercepting proxy for
