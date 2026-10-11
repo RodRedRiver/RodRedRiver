@@ -29,7 +29,7 @@ and a WebGL product experience for a combat-sports wearable.
 ## Selected Work
 
 ### Impkt — Combat-Sports Wearable Platform
-[`TlNT0/Impkt`](https://github.com/TlNT0/Impkt)
+[`RodRedRiver/Impkt`](https://github.com/RodRedRiver/Impkt)
 
 Product site and pilot programme for a wearable built around a 9-axis IMU
 sampling at 1000 Hz. I handle the web presence, the pilot activation flow, and
@@ -98,8 +98,8 @@ with certificate chains, SANs, and trust configuration.
 ## GitHub Activity
 
 <p>
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=TlNT0&show_icons=true&hide_border=true&theme=default" />
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TlNT0&layout=compact&hide_border=true" />
+  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=RodRedRiver&show_icons=true&hide_border=true&theme=default" />
+  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RodRedRiver&layout=compact&hide_border=true" />
 </p>
 
 ---
@@ -107,4 +107,4 @@ with certificate chains, SANs, and trust configuration.
 ## Contact
 
 Email: [rodrigo.rio.tinto@email.com](mailto:rodrigo.rio.tinto@email.com)
-GitHub: [@TlNT0](https://github.com/TlNT0)
+GitHub: [@RodRedRiver](https://github.com/RodRedRiver)
