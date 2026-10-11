@@ -20,6 +20,7 @@ and a WebGL product experience for a combat-sports wearable.
 | **Web & Front End** | JavaScript (ES modules), HTML/CSS, design systems, self-hosted typography, responsive layout |
 | **3D & Graphics** | Three.js / WebGL, procedural geometry, PBR materials, OBJ/MTL asset pipelines |
 | **Security** | AES-GCM and PBKDF2 (Web Crypto), TLS certificate tooling, token-based access |
+| **Systems** | Swift, SwiftNIO, WebSockets, PTY/terminal sessions, TLS, launchd/systemd services |
 | **Hardware Integration** | Bluetooth Low Energy, IMU sensor data, firmware-to-cloud data flow |
 | **Tooling** | Git, Node.js CLIs, Python, shell scripting |
 
@@ -47,6 +48,21 @@ orientation) from the band.
   self-hosted fonts and no framework dependencies.
 - Maintained print-ready collateral as reproducible source (HTML to PDF via
   headless Chrome) rather than one-off files.
+
+### CodeRelay — Remote Terminal Relay
+[`miguelriotinto/CodeRelay`](https://github.com/miguelriotinto/CodeRelay) · co-developed with Miguel Rio-Tinto
+
+A WebSocket server and CLI that gives secure, persistent terminal access from
+a phone or another machine, with native clients on iOS, macOS, and Android.
+
+- Real-time bidirectional PTY sessions over WebSocket (Swift, SwiftNIO) with
+  optional TLS, and sessions that survive detach and reattach.
+- Token-based authentication with single-use, short-lived QR pairing codes that
+  are exchanged for revocable per-device tokens, plus per-token session caps.
+- Localhost-only admin API for service management, config validation on both
+  client and server, and run-as-a-service support (launchd and systemd).
+- Native clients with tabbed sessions, coding-agent detection, push
+  notifications, and two-way clipboard bridging.
 
 ### Camelot — Environmental Monitoring Backend
 *Private repository*
